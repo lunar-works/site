@@ -5,6 +5,7 @@ export const mastBase = css`
     display:flex;
     align-items: center;
     height:100%;
+    position:fixed;
     padding:1rem;
     box-sizing: content-box;
     background: ${props => props.theme.mast.background};
