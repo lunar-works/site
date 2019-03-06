@@ -4,7 +4,7 @@ import Mast from '../components/generics/mast'
 import PrimaryNav from '../components/generics/navigation/primary'
 
 const items = [
-    {name: 'Home', component: <NavLink to="/home">Home</NavLink>},
+    {name: 'Home', component: <NavLink to="/">Home</NavLink>},
     {name: 'About', component: <NavLink to="/about">About</NavLink>},
     {name: 'Products', component: <NavLink to="/products">Products</NavLink>},
     {name: 'Blog', component: <NavLink to="/blog">Blog</NavLink>},
