@@ -14,7 +14,7 @@ const items = [
 //todos: main footer component
 const Layout = props => 
     <>
-        <Mast>
+        <Mast >
             <>logo</>
             <PrimaryNav items={items}/>
         </Mast>
