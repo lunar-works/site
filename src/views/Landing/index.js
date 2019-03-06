@@ -15,7 +15,11 @@ class Landing extends Component {
   render() {    
     return (
       <Wrap>
-
+        <h1>Landing</h1>
+        <Hero></Hero>
+        <Products></Products>
+        <Consultancy></Consultancy>
+        <Connect></Connect>
       </Wrap>
     )
   }
