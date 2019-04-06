@@ -5,6 +5,31 @@ const Wrap = styled.div`
 
 `
 
+const Services = [{
+  title: 'Example 1',
+  description: 'Description of the service'
+},{
+  title: 'Example 2',
+  description: 'Description of the service'
+},{
+  title: 'Example 3',
+  description: 'Description of the service'
+},{
+  title: 'Example 4',
+  description: 'Description of the service'
+},{
+  title: 'Example 5',
+  description: 'Description of the service'
+},{
+  title: 'Example 6',
+  description: 'Description of the service'
+}]
+
+const Service = ({title, description}) => <div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div>
+
 class Detail extends Component {
 
   constructor(props) {
@@ -12,10 +37,14 @@ class Detail extends Component {
     
   }
 
+  renderServices() {
+    return Services.map((service) => <Service {...service} />)
+  }
+
   render() {    
     return (
       <Wrap>
-        <h2>Services Detail</h2>
+        { this.renderServices() }
       </Wrap>
     )
   }
