@@ -1,24 +1,13 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import {PositionContainer} from '../generics/containers'
 
-const Wrap = styled.div`
 
-`
+const Hero = () =>
+  <PositionContainer 
+    image="/static/images/flag.jpg"
+    imagePos="center bottom"
+    imageSize="cover"
+  >
+  </PositionContainer>
 
-class Hero extends Component {
-
-  constructor(props) {
-    super(props)
-    
-  }
-
-  render() {    
-    return (
-      <Wrap>
-        <h2>Hero</h2>
-      </Wrap>
-    )
-  }
-
-}
 export default Hero
