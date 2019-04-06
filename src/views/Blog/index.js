@@ -15,7 +15,7 @@ class Landing extends Component {
   render() {    
     return (
       <Wrap>
-
+          <h1>Blog</h1>
       </Wrap>
     )
   }

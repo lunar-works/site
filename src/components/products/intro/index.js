@@ -5,7 +5,7 @@ const Wrap = styled.div`
 
 `
 
-class Landing extends Component {
+class Intro extends Component {
 
   constructor(props) {
     super(props)
@@ -15,10 +15,10 @@ class Landing extends Component {
   render() {    
     return (
       <Wrap>
-          <h1>About</h1>
+        <h2>Products Intro</h2>
       </Wrap>
     )
   }
 
 }
-export default Landing
+export default Intro
