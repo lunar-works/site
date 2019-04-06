@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Button from '../../generics/button';
 
 const Wrap = styled.div`
 
@@ -15,7 +16,8 @@ class Cta extends Component {
   render() {    
     return (
       <Wrap>
-        <h2>About Cta</h2>
+        <p>How can we help your business?</p>
+        <Button type="link">See What We Do</Button>
       </Wrap>
     )
   }
