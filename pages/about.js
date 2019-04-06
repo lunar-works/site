@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Story from '../../components/about/story'
-import Companies from '../../components/about/companies'
-import Values from '../../components/about/values'
-import Cta from '../../components/about/cta'
-
-const Wrap = styled.div`
-
-`
+import Story from '../components/about/story'
+import Companies from '../components/about/companies'
+import Values from '../components/about/values'
+import Cta from '../components/about/cta'
+import Layout from '../components/layout'
 
 class Landing extends Component {
 
@@ -19,7 +16,7 @@ class Landing extends Component {
 
   render() {    
     return (
-      <Wrap>
+      <Layout>
           <h1>About</h1>
 
           <Story />
@@ -27,7 +24,7 @@ class Landing extends Component {
           <Values />
           <Cta />
 
-      </Wrap>
+      </Layout>
     )
   }
 

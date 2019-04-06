@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Hero from '../../components/hero'
-import About from '../../components/about/summary'
-import Services from '../../components/services/summary'
-import Connect from '../../components/social'
+import Hero from '../components/hero'
+import About from '../components/about/summary'
+import Services from '../components/services/summary'
+import Connect from '../components/social'
+import Layout from '../components/layout'
 
-const Wrap = styled.div`
-
-`
 
 class Landing extends Component {
 
@@ -19,12 +17,12 @@ class Landing extends Component {
 
   render() {    
     return (
-      <Wrap>
+      <Layout>
         <Hero></Hero>
         <About></About>
         <Services></Services>
         <Connect></Connect>
-      </Wrap>
+      </Layout>
     )
   }
 

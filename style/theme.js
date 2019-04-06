@@ -1,7 +1,8 @@
 const theme = {
     main: {
-        background: '#F8F9FD',
+        background: '#000',
         font: 'sans-serif',
+        color: '#f1f1f1',
         borderRadius: '4px'
     },
     headings: {
@@ -32,7 +33,7 @@ const theme = {
         podSeperator: '2rem'
     },
     mast: {
-        background: '#fff',
+        background: '#000',
         shadow: true
     },
     buttons: {

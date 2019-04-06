@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Intro from '../../components/services/intro'
-import Detail from '../../components/services/detail'
-import Cta from '../../components/services/cta'
-
-const Wrap = styled.div`
-
-`
+import Intro from '../components/services/intro'
+import Detail from '../components/services/detail'
+import Cta from '../components/services/cta'
+import Layout from '../components/layout'
 
 class Services extends Component {
 
@@ -18,12 +15,12 @@ class Services extends Component {
 
   render() {
     return (
-      <Wrap>
+      <Layout>
           <h1>Services</h1>
           <Intro />
           <Detail />
           <Cta />
-      </Wrap>
+      </Layout>
     )
   }
 

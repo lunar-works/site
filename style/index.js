@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     overflow-x:hidden;
     background: ${props => (props.theme.main.background)};
-    font-family: ${props => props.theme.main.font}
+    font-family: ${props => props.theme.main.font};
+    color: ${props => props.theme.main.color};
     * {
       box-sizing: border-box;
     }
