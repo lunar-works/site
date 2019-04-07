@@ -15,7 +15,7 @@ class Summary extends Component {
   render() {    
     return (
       <Wrap>
-        <h2>About Summary</h2>
+        <p><b>We are Lunarworks</b>, a design, marketing and technology consultancy based in the United Kingdom. Our talented consultants work remotely, providing expert insight across the globe. We provide proven data-driven solutions to help you connect with your customers and achieve your goals.</p>
       </Wrap>
     )
   }
