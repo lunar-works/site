@@ -9,6 +9,7 @@ export const ColumnContainerBase = css`
     flex-direction: column;
     flex: ${props => props.size || 1};
     justify-content: ${props => props.position || 'flex-start'};
+    align-items: ${props => props.align || 'center'};
     ${props => props.image 
         ? `
             background-image: url(${props.image});

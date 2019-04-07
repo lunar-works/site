@@ -1,6 +1,7 @@
 
-import React from 'react'
+import React,{Children} from 'react'
 import styled, {css} from 'styled-components'
+
 
 export const PrimaryNavBase = css`
     ul {
@@ -15,9 +16,34 @@ export const PrimaryNavBase = css`
         : `flex-direction:column;`
     }
     li{
+        margin-left: 1rem;
+    }
+    a{ 
+        color: #fff;
+        opacity: 0.7;
+        &:hover {
+            opacity:1;
+        }
+        font-weight: normal;
+        position:relative;
+        &.active {
+            opacity:1;
+        }
+        &.active:after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            bottom: -45%;
+            background: #1c93e7;
+            border-radius: 100px;
+            left: 50%;
+        }
+    }
+    li{
         ${props => props.position === "top"
         ?  `
-            margin-left: 1rem;
+            margin-left: 2rem;
         `
         : ``
     }

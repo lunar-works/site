@@ -16,8 +16,16 @@ const GlobalStyle = createGlobalStyle`
     background: ${props => (props.theme.main.background)};
     font-family: ${props => props.theme.main.font};
     color: ${props => props.theme.main.color};
+    font-size:17px;
     * {
       box-sizing: border-box;
+    }
+
+
+    a {
+      color:#1c93e7;
+      text-decoration:none;
+      font-weight:bold;
     }
   }
 `

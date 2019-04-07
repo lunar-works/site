@@ -45,9 +45,6 @@ export const mastBase = css`
     nav ul{
         display:flex;
         flex-direction: row;
-        li{
-            margin-left: 0.3rem;
-        }
     }
     ${props => props.layouts.map(item => `
         @media(min-width: ${item['transform-at']}){

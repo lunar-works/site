@@ -15,7 +15,7 @@ const Banner = styled(PositionContainer)`
 
 const BannerContent = styled(Content)`
   text-align:center;
-  padding-top:80px;
+  padding-top:100px;
   h1{
     line-height:2.3rem;
   }
@@ -30,7 +30,7 @@ const BannerContent = styled(Content)`
 
 const Hero = (props) =>
   <Banner 
-    image="/static/images/flag.jpg"
+    image="/static/images/flag2.jpg"
     imagePos="center bottom"
     imageSize="cover"
     align="start"
