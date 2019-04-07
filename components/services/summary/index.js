@@ -9,6 +9,7 @@ const SPod = styled(Pod)`
   border-radius:4px;
   margin: 0;
   box-shadow: 0px 10px 10px #dedede;
+  color: #424770;
   h3{
     color:#000;
     font-size:1.4rem;
@@ -57,7 +58,7 @@ const Summary = () =>
   >
       <Content style={{textAlign:"center", maxWidth: "50%"}}>
         <H2 style={{color:"#000"}}>Our Services</H2>
-        <p>A design, marketing and technology consultancy based in the United Kingdom. Our talented consultants work remotely, providing expert insight across the globe. We provide proven data-driven solutions to help you connect with your customers and achieve your goals.</p>
+        <p style={{color: "#424770"}}>A design, marketing and technology consultancy based in the United Kingdom. Our talented consultants work remotely, providing expert insight across the globe. We provide proven data-driven solutions to help you connect with your customers and achieve your goals.</p>
         <a href="/services">Read more</a>
       </Content>
       <div style={{

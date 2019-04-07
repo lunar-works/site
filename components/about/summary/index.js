@@ -10,7 +10,7 @@ const Summary = () =>
   >
     <ColumnContainer
       position="center">
-      Some image
+      <img src="/static/images/window.png" height="80%" style={{objectFit: "contain", margin:"1rem"}}/>
     </ColumnContainer>
     <ColumnContainer 
       
