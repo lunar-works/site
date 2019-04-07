@@ -62,6 +62,7 @@ export default class MyDocument extends Document {
 
 
             <meta name="theme-color" content="#000"/>
+            <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
             <link rel="manifest" href="/static/manifest.json" />
             {this.props.styleTags}

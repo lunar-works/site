@@ -2,7 +2,7 @@ import React from 'react'
 import styled,{css} from 'styled-components'
 
 const btnBase = css`   
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
     ${props => props.transparent === undefined
     ? `background: ${props.theme.buttons.background};`
     : `border: 1px solid ${props.theme.buttons.background};
@@ -16,6 +16,7 @@ const btnBase = css`
         ?`display:block;`
         :`display:inline-block;`
     }
+    font-size:0.9rem;
     text-align:center;
     box-sizing: border-box;
     text-transform: uppercase;

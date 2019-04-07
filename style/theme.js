@@ -1,12 +1,13 @@
 const theme = {
     main: {
         background: '#000',
-        font: 'sans-serif',
-        color: '#f1f1f1',
+        font: "'Lato', sans-serif",
+        color: '#999',
         borderRadius: '4px'
     },
     headings: {
-        color: 'red',
+        color: '#f1f1f1',
+        font: "'Lato', sans-serif",
         h1: {
             size: '3rem'
         },
@@ -37,7 +38,7 @@ const theme = {
         shadow: true
     },
     buttons: {
-        background: 'blue',
+        background: '#1d1e25',
         borderRadius: () => theme.main.borderRadius
     }
 }

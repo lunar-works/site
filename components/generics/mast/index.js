@@ -41,6 +41,7 @@ export const mastBase = css`
     box-sizing: border-box;
     background: ${props => props.theme.mast.background};
     justify-content: space-between;
+    top:0;
     nav ul{
         display:flex;
         flex-direction: row;
