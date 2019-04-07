@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { ColumnContainer, GridContainer, Content, Pod, PositionContainer } from '../../generics/containers';
+import { H2, H3 } from '../../generics/headings';
 
-const Wrap = styled.div`
-
+const SPod = styled(Pod)`
+  background:#000;
+  border: 0;
 `
 
 const services = [{
@@ -25,29 +28,29 @@ const services = [{
   'description': 'Employ us for a design sprint to explore a business concept, or allow us to provide creative insight.'
 }]
 
-const Service = ({title, description}) => <div>
-  <h3>{title}</h3>
-  <p>{description}</p>
-</div>
 
-class Summary extends Component {
 
-  constructor(props) {
-    super(props)
-    
-  }
+const ServicesPod = ({title, description}) => 
+  <SPod>  
+    <Content>
+      <H3>{title}</H3>
+      <p>{description}</p>
+    </Content>
+  </SPod>
 
-  renderServices() {
-    return services.map(service => <Service {...service} />);
-  }
 
-  render() {    
-    return (
-      <Wrap>
-        { this.renderServices() }
-      </Wrap>
-    )
-  }
+const Summary = () => 
+  <PositionContainer
+    id="services"
+    style={{background:"#080808"}}
+  >
+    <Content>
+        <H2>Our Services</H2>
+        <p>WE ARE GREAT HIRE US</p>
+    </Content>
+    <Content>
+    {services.map(item => <ServicesPod title={item.title} description={item.description} />)}
+    </Content>
+  </PositionContainer>
 
-}
 export default Summary

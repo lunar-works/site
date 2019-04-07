@@ -1,12 +1,13 @@
 const theme = {
     main: {
         background: '#000',
-        font: 'sans-serif',
+        font: "'Lato', sans-serif",
         color: '#999',
         borderRadius: '4px'
     },
     headings: {
         color: '#f1f1f1',
+        font: "'Lato', sans-serif",
         h1: {
             size: '3rem'
         },

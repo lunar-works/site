@@ -7,8 +7,7 @@ export const PositionContainerBase = css`
     align-items: ${props => props.position || 'center'};
     flex-direction: ${props => props.column || 'column'};
     width: 100%;
-    height: 100%;
-    overflow-x: auto;
+    min-height: 100%;
     ${props => props.image 
         ? `
             background-image: url(${props.image});

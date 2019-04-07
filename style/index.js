@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     overflow-x:hidden;
     letter-spacing: 0.06rem;
-    line-height: 140%;
+    line-height: 180%;
     -webkit-font-smoothing: antialiased;
     background: ${props => (props.theme.main.background)};
     font-family: ${props => props.theme.main.font};
