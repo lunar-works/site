@@ -3,7 +3,6 @@ import styled,{css} from 'styled-components'
 
 export const GridContainerBase = css`
     display: flex;
-    height:100%;
     width: 100%;
     justify-content: ${props => props.align || 'center'};
     align-items: ${props => props.position || 'center'};

@@ -6,7 +6,7 @@ import { H2 } from '../../generics/headings';
 const Summary = () => 
   <GridContainer
     id="about"
-    style={{background:"#080808"}}
+    style={{background:"#080808" ,height:"100%"}}
   >
     <ColumnContainer
       position="center">

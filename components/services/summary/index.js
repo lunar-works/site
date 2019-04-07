@@ -4,8 +4,16 @@ import { ColumnContainer, GridContainer, Content, Pod, PositionContainer } from 
 import { H2, H3 } from '../../generics/headings';
 
 const SPod = styled(Pod)`
-  background:#000;
+  background:#fff;
   border: 0;
+  border-radius:4px;
+  margin: 0;
+  box-shadow: 0px 10px 10px #dedede;
+  h3{
+    color:#000;
+    font-size:1.4rem;
+    font-weight: normal;
+  }
 `
 
 const services = [{
@@ -20,13 +28,15 @@ const services = [{
 },{
   'title': 'Brand Development',
   'description': 'Visit a branding workshop or enlist our consultants to help you develop your brand image and voice.'
-},{
-  'title': 'Workshops',
-  'description': 'We offer a range of workshops, from Branding to Data Analysis, which can help your business grow in a number of ways.'
-},{
-  'title': 'Design Sprints',
-  'description': 'Employ us for a design sprint to explore a business concept, or allow us to provide creative insight.'
-}]
+}
+//,{
+//   'title': 'Workshops',
+//   'description': 'We offer a range of workshops, from Branding to Data Analysis, which can help your business grow in a number of ways.'
+// },{
+//   'title': 'Design Sprints',
+//   'description': 'Employ us for a design sprint to explore a business concept, or allow us to provide creative insight.'
+// }
+]
 
 
 
@@ -42,15 +52,27 @@ const ServicesPod = ({title, description}) =>
 const Summary = () => 
   <PositionContainer
     id="services"
-    style={{background:"#080808"}}
+    style={{background:"#f1f1f1"}}
+    column="column"
   >
-    <Content>
-        <H2>Our Services</H2>
-        <p>WE ARE GREAT HIRE US</p>
-    </Content>
-    <Content>
-    {services.map(item => <ServicesPod title={item.title} description={item.description} />)}
-    </Content>
+      <Content style={{textAlign:"center", maxWidth: "50%"}}>
+        <H2 style={{color:"#000"}}>Our Services</H2>
+        <p>A design, marketing and technology consultancy based in the United Kingdom. Our talented consultants work remotely, providing expert insight across the globe. We provide proven data-driven solutions to help you connect with your customers and achieve your goals.</p>
+        <a href="/services">Read more</a>
+      </Content>
+      <div style={{
+        display:"grid",
+        padding: "2rem",
+        gridTemplateColumns: "1fr 1fr",
+        gridGap: "20px",
+        maxWidth: "80%"
+      }}>
+        {services.map(item => <ServicesPod title={item.title} description={item.description} />)}
+      </div>
+      <PositionContainer>
+          Get in touch with us
+          <a href="/services">Read more</a>
+      </PositionContainer>
   </PositionContainer>
 
 export default Summary
